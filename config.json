@@ -1,0 +1,8 @@
+{
+  "baseURL": "http://example.org/",
+  "languageCode": "en-us",
+  "title": "Ad Insertion Platform",
+  "sitemap": "",
+  "footnoteReturnLinkContents": "↩",
+  "theme": "academia"
+}
