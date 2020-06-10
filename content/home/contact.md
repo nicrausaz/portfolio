@@ -3,7 +3,7 @@
 widget = "contact"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true     # This file represents a page section.
 active = true       # Activate this widget? true/false
-weight = 130        # Order that this section will appear.
+weight = 60        # Order that this section will appear.
 
 title = "Contact"
 subtitle = "N'hésitez pas à me contacter !"
@@ -17,4 +17,8 @@ autolink = true
 #   2: formspree.io
 email_form = 2
 +++
-
+<form action="https://formspree.io/mknqbjkw" method="POST">
+  <input type="text" name="name">
+  <input type="email" name="_replyto">
+  <input type="submit" value="Send">
+</form>
