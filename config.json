@@ -2,7 +2,6 @@
   "baseURL": "http://example.org/",
   "languageCode": "fr",
   "title": "Nicolas Crausaz",
-  "sitemap": "",
-  "footnoteReturnLinkContents": "↩",
-  "theme": "academia"
+  "sitemap": "sitemap.xml",
+  "theme": "ncrausaz"
 }

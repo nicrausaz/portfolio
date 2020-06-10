@@ -14,18 +14,18 @@
   weight = 20
 
 [[main]]
-  name = "Technologies"
-  url = "#projects"
+  name = "Services"
+  url = "#services"
   weight = 30
 
 [[main]]
-  name = "Projets"
-  url = "#projets"
+  name = "Technologies"
+  url = "#technos"
   weight = 40
 
 [[main]]
-  name = "Services"
-  url = "#services"
+  name = "Contact"
+  url = "#contact"
   weight = 50
 
 # Link to a PDF of your resume/CV from the menu.

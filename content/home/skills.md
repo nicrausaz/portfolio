@@ -8,7 +8,6 @@ weight = 40  # Order that this section will appear.
 title = "Technologies"
 subtitle = "J'utilise principalement ces technologies dans mes développements Web"
 
-# Showcase personal skills or business features.
 # 
 # Add/remove as many `[[feature]]` blocks below as you like.
 # 

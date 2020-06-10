@@ -2,13 +2,11 @@
 widget = "experience"
 headless = true
 active = true
-weight = 30  # Order that this section will appear.
+weight = 30
 
 title = "Cursus"
 subtitle = "Mes diverses expériences professionnelles"
 
-# Date format for experience
-#   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
 date_format = "Jan 2006"
 
 # Experiences.

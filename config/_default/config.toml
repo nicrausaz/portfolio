@@ -16,7 +16,7 @@ googleAnalytics = ""
 ############################
 
 # Name of Academia theme folder in `themes/`.
-theme = "academia"
+theme = "ncrausaz"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "fr"
