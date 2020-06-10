@@ -6,7 +6,7 @@
 
 title = "Nicolas Crausaz"
 baseURL = "https://crausaz.click/"
-copyright = "{year} - Nicolas Crausaz, tous droits résérvés"
+copyright = "&copy; {year} - Nicolas Crausaz, tous droits résérvés"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = ""
@@ -37,7 +37,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 #   See: https://gohugo.io/getting-started/configuration/#configure-blackfriday
 [blackfriday]
   hrefTargetBlank = true  # `true` opens external links in a new tab. See https://github.com/gohugoio/hugo/issues/2424
-	angledQuotes = false
+	angledQuotes = true
 	latexDashes = true
   extensions = ["backslashLineBreak"]
 
