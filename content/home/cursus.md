@@ -40,6 +40,6 @@ date_format = "Jan 2006"
   location = "Lausanne"
   date_start = "2015-08-01"
   date_end = "2019-08-30"
-  description = """Apprentissage d'informaticien CFC avec maturité professionnelle technique intégrée en formation duale (en entreprise) à ENAC-IT EPFL, Lausanne"""
+  description = """Apprentissage d'informaticien CFC avec maturité professionnelle technique intégrée en formation duale à ENAC-IT EPFL, Lausanne"""
   
 +++
