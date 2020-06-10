@@ -6,7 +6,7 @@
 
 title = "Nicolas Crausaz"
 baseURL = "https://crausaz.click/"
-copyright = "&copy {year} Nicolas Crausaz, tous droits résérvés"
+copyright = "{year} - Nicolas Crausaz, tous droits résérvés"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = ""
@@ -18,11 +18,8 @@ googleAnalytics = ""
 # Name of Academia theme folder in `themes/`.
 theme = "academia"
 
-# Get last modified date for content from Git?
-enableGitInfo = false
-
 # Default language to use (if you setup multilingual support)
-defaultContentLanguage = "en"
+defaultContentLanguage = "fr"
 hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
 defaultContentLanguageInSubdir = false
 removePathAccents = true  # Workaround for https://github.com/gohugoio/hugo/issues/5687
