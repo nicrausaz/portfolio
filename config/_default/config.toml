@@ -6,7 +6,7 @@
 
 title = "Nicolas Crausaz"
 baseURL = "https://crausaz.click/"
-copyright = "&copy; {year} - Nicolas Crausaz, tous droits résérvés"
+copyright = "&copy; {year} - Nicolas Crausaz, tous droits réservés"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = ""

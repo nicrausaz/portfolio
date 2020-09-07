@@ -41,4 +41,4 @@ hero_media = "crausaz.jpg"
 ## **Nicolas Crausaz**
 
 Etudiant bachelor HEIG-VD en **infomatique logicielle**
-Informaticien CFC + Maturité professionelle technique
+Informaticien CFC + Maturité professionnelle technique

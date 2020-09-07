@@ -10,7 +10,7 @@ date_format = "Jan 2006"
 
 
 [[experience]]
-  title = "Co-directeur SI"
+  title = "Manager Informatique"
   company = "AZNA"
   company_url = "https://azna.ch"
   location = "Renens VD"
@@ -18,8 +18,8 @@ date_format = "Jan 2006"
   date_end = ""
   description = """
   Responsabilités:
-  * Développement web (azna.ch)
-  * Co-directeur SI
+  * Développement web (azna.ch) (Juin 2019 - Juin 2020)
+  * Co-directeur SI (Janvier 2020 - Juin 2020)
   * Mise en place et administration de services
   * Support collaborateur
   """
