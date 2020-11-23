@@ -26,10 +26,13 @@ social:
 - icon: linkedin
   link: https://www.linkedin.com/in/nicolas-crausaz-861876104/
   icon_pack: fab
+- icon: instagram
+  link: https://www.instagram.com/nicrausaz/
+  icon_pack: fab
 
 ---
 
-Je m'appelle Nicolas Crausaz, 20 ans. Je suis actuellement une formation en Haute Ecole d'ingénierie (HEIG-VD) en tant qu'ingénieur en informatique logicielle. 
+Je m'appelle Nicolas Crausaz, 21 ans. Je suis actuellement une formation en Haute Ecole d'ingénierie (HEIG-VD) en tant qu'ingénieur en informatique logicielle. 
 
 Passionné par le développement et les technologies Web, j'ai eu l'occasion durant ma formation initiale, ainsi que de manière indépendante, de réaliser de multiples projets réels de moyenne à grande envergure.
 
