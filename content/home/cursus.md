@@ -15,11 +15,11 @@ date_format = "Jan 2006"
   company_url = "https://azna.ch"
   location = "Renens VD"
   date_start = "2019-06-01"
-  date_end = ""
+  date_end = "2021-04-08"
   description = """
   Responsabilités:
-  * Développement web (azna.ch) (Juin 2019 - Juin 2020)
-  * Co-directeur SI (Janvier 2020 - Juin 2020)
+  * Développement web (azna.ch) (Juin 2019 - Décembre 2020)
+  * Responsable SI
   * Mise en place et administration de services
   * Support collaborateur
   """

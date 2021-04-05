@@ -6,5 +6,5 @@ active = true     # Activate this widget? true/false
 weight = 20       # Order that this section will appear in.
 
 author = "ncrausaz"
-avatar_image= "crausaz2.jpg"
+avatar_image= "crausaz3.jpg"
 +++
