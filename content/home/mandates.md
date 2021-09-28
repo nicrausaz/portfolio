@@ -8,6 +8,28 @@ title = "Mandats"
 subtitle = "Mandats & projets réalisés"
 date_format = "Jan 2006"
 
+[[experience]]
+  title = "Améliorations site web"
+  company = "Ad Insertion Platform"
+  company_url = "https://www.adinsertplatform.com/"
+  date_start = "2021-09-01"
+  date_end = "2021-09-01"
+  description = """
+  Détails:
+   Améliorations, refactor (Hugo Framework)
+  """
+
+[[experience]]
+  title = "MyJob"
+  company = "Junior Enterprise EPFL"
+  company_url = "https://myjob.epfl.ch"
+  date_start = "2021-04-01"
+  date_end = "2021-08-01"
+  description = """
+  Détails:
+   Installation & configuration serveur apache, déploiement de plusieurs sites.
+   Code review, correction de bugs, mise en production. (Apache, Vue.js, Laravel)
+  """
 
 [[experience]]
   title = "Refonte site web"
@@ -25,7 +47,9 @@ date_format = "Jan 2006"
   company = "Junior Enterprise EPFL, CHUV"
   company_url = "https://pedibook.ch/"
   date_start = "2021-03-01"
-  date_end = ""
-  description = "Audit, correction de bug, migration"
-  
+  date_end = "2021-06-01"
+  description = """
+  Détails:
+   Audit, correction de bug, migration, (Vue.js, Laravel)
+  """
 +++

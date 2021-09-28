@@ -32,7 +32,7 @@ social:
 
 ---
 
-Je m'appelle Nicolas Crausaz, 21 ans. Je suis actuellement une formation en Haute Ecole d'ingénierie (HEIG-VD) en tant qu'ingénieur en informatique logicielle. 
+Je m'appelle Nicolas Crausaz, 22 ans. Je suis actuellement une formation en Haute Ecole d'ingénierie (HEIG-VD) en tant qu'ingénieur en informatique logicielle. 
 
 Passionné par le développement et les technologies Web, j'ai eu l'occasion durant ma formation initiale, ainsi que de manière indépendante, de réaliser de multiples projets réels de moyenne à grande envergure.
 
