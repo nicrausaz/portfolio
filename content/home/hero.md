@@ -5,7 +5,7 @@ active = true    # Activate this widget? true/false
 weight = 10      # Order that this section will appear.
 
 title = "Ncrausaz"
-hero_media = "NicolasCrausaz.jpg"
+hero_media = "NicolasCrausaz.png"
 
 [design.background]
   # Apply a background color, gradient, or image.
