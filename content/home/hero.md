@@ -5,9 +5,7 @@ active = true    # Activate this widget? true/false
 weight = 10      # Order that this section will appear.
 
 title = "Ncrausaz"
-
-# Hero image (optional). Enter filename of an image in the `static/img/` folder.
-hero_media = "crausaz.jpg"
+hero_media = "NicolasCrausaz.jpg"
 
 [design.background]
   # Apply a background color, gradient, or image.

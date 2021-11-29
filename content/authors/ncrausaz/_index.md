@@ -36,4 +36,4 @@ Je m'appelle Nicolas Crausaz, 22 ans. Je suis actuellement une formation en Haut
 
 Passionné par le développement et les technologies Web, j'ai eu l'occasion durant ma formation initiale, ainsi que de manière indépendante, de réaliser de multiples projets réels de moyenne à grande envergure.
 
-Je mets à disposition mes compétences et connaissances pour vous renseigner sur vos idées de projets informatiques et développement Web.
+Je mets à disposition mes compétences et connaissances pour vous renseigner sur vos idées de projets informatiques et de développement Web.
