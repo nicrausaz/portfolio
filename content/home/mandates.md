@@ -9,6 +9,18 @@ subtitle = "Mandats & projets réalisés"
 date_format = "Jan 2006"
 
 [[item]]
+  title = "Loomis"
+  organization = "Junior Enterprise EPFL"
+  organization_url = ""
+  date_start = "2021-12-15"
+  date_end = ""
+  description = """
+  Application web permettant à des cliniques / hôpitaux de créer des fiches d'opération.
+
+  Frontend: Vue.js
+  """
+
+[[item]]
   title = "Améliorations site web"
   organization = "Ad Insertion Platform"
   organization_url = "https://www.adinsertplatform.com/"
