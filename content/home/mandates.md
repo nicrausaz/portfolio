@@ -21,6 +21,16 @@ date_format = "Jan 2006"
   """
 
 [[item]]
+  title = "Namelok"
+  organization = "Namelok Farm Association"
+  organization_url = "https://namelok.com/"
+  date_start = "2022-01-01"
+  date_end = "2022-01-29"
+  description = """
+  Site de présentation de l'association Namelok. Construction d'écoles, parrainages d'écoliers au Kenya.
+  """
+
+[[item]]
   title = "Améliorations site web"
   organization = "Ad Insertion Platform"
   organization_url = "https://www.adinsertplatform.com/"
