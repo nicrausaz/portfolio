@@ -8,6 +8,16 @@ title = "Mandats"
 subtitle = "Mandats & projets réalisés"
 date_format = "Jan 2006"
 
+#[[item]]
+#  title = "magaliebouvier.ch"
+#  organization = "Magalie Bouvier"
+#  organization_url = "magaliebouvier.ch"
+#  date_start = "2022-02-05"
+#  date_end = "2022-02-28"
+#  description = """
+#  Portfolio pour illustratrice
+#  """
+
 [[item]]
   title = "Loomis"
   organization = "Junior Enterprise EPFL"
