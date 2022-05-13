@@ -31,6 +31,16 @@ date_format = "Jan 2006"
   """
 
 [[item]]
+  title = "magaliebouvier.ch"
+  organization = "Illustratrice"
+  organization_url = "https://magaliebouvier.ch"
+  date_start = "2022-04-01"
+  date_end = "2022-04-30"
+  description = """
+  Portfolio pour l'illustratrice Magalie Bouvier
+  """
+
+[[item]]
   title = "Namelok"
   organization = "Namelok Farm Association"
   organization_url = "https://namelok.com/"
