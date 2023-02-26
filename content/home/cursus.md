@@ -9,16 +9,6 @@ subtitle = "Mes diverses expériences professionnelles"
 date_format = "Jan 2006"
 
 [[experience]]
-  title = "Développeur Full Stack"
-  company = "YALK"
-  company_url = "https://yalk.ch"
-  location = "Grandson"
-  date_start = "2022-01-01"
-  date_end = ""
-  description = """
-  """
-
-[[experience]]
   title = "Manager Informatique"
   company = "AZNA"
   company_url = "https://azna.ch"

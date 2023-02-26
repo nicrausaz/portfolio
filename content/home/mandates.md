@@ -8,16 +8,6 @@ title = "Mandats"
 subtitle = "Mandats & projets réalisés"
 date_format = "Jan 2006"
 
-#[[item]]
-#  title = "magaliebouvier.ch"
-#  organization = "Magalie Bouvier"
-#  organization_url = "magaliebouvier.ch"
-#  date_start = "2022-02-05"
-#  date_end = "2022-02-28"
-#  description = """
-#  Portfolio pour illustratrice
-#  """
-
 [[item]]
   title = "Loomis"
   organization = "Junior Enterprise EPFL"
@@ -27,17 +17,7 @@ date_format = "Jan 2006"
   description = """
   Application web permettant à des cliniques / hôpitaux de créer des fiches d'opération.
 
-  Frontend: Vue.js
-  """
-
-[[item]]
-  title = "magaliebouvier.ch"
-  organization = "Illustratrice"
-  organization_url = "https://magaliebouvier.ch"
-  date_start = "2022-04-01"
-  date_end = "2022-04-30"
-  description = """
-  Portfolio pour l'illustratrice Magalie Bouvier
+  Frontend: Vue.js, TypeScript, TailwindCSS
   """
 
 [[item]]
