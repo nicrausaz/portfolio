@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
 title = "Technologies"
-subtitle = "J'utilise principalement ces technologies dans mes développements Web"
+subtitle = "J'ai mis en pratique les technologies suivantes dans des projets personnels, scolaires ou professionnels."
 
 # 
 # Add/remove as many `[[feature]]` blocks below as you like.
@@ -18,11 +18,23 @@ subtitle = "J'utilise principalement ces technologies dans mes développements W
   icon_pack = "fab"
   name = "Vue.js"
   parcent = ""
+
+[[feature]]
+  icon = "js"
+  icon_pack = "fab"
+  name = "JavaScript"
+  parcent = ""
   
 [[feature]]
-  icon = "wordpress"
+  icon = "ts"
   icon_pack = "fab"
-  name = "WordPress"
+  name = "TypeScript"
+  parcent = ""
+
+[[feature]]
+  icon = "node"
+  icon_pack = "fab"
+  name = "Node.js"
   parcent = ""
 
 [[feature]]
@@ -32,9 +44,27 @@ subtitle = "J'utilise principalement ces technologies dans mes développements W
   parcent = ""
 
 [[feature]]
-  icon = "node"
+  icon = "java"
   icon_pack = "fab"
-  name = "Node.js"
+  name = "Java"
+  parcent = ""
+
+[[feature]]
+  icon = "cpp"
+  icon_pack = "fab"
+  name = "C++"
+  parcent = ""
+
+[[feature]]
+  icon = "golang"
+  icon_pack = "fab"
+  name = "Go"
+  parcent = ""
+
+[[feature]]
+  icon = "computer"
+  icon_pack = "fab"
+  name = "Rust"
   parcent = ""
 
 +++
