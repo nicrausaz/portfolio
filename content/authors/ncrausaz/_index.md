@@ -9,7 +9,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Etudiant bachelor en infomatique logicielle
+role: Ingénieur HES en informatique logicielle
 
 # Organizations/Affiliations
 organizations:
@@ -32,8 +32,6 @@ social:
 
 ---
 
-Je m'appelle Nicolas Crausaz, 23 ans. Je suis actuellement une formation en Haute Ecole d'ingénierie (HEIG-VD) en tant qu'ingénieur en informatique logicielle. 
+Je m'appelle Nicolas Crausaz, 24 ans. Je suis ingénieur en informatique logicielle, diplômé de la HEIG-VD en 2023.
 
 Passionné par le développement et les technologies Web, j'ai eu l'occasion durant ma formation initiale, ainsi que de manière indépendante, de réaliser de multiples projets réels de moyenne à grande envergure.
-
-Je mets à disposition mes compétences et connaissances pour vous renseigner sur vos idées de projets informatiques et de développement Web.

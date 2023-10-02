@@ -9,15 +9,27 @@ subtitle = "Mandats & projets réalisés"
 date_format = "Jan 2006"
 
 [[item]]
+  title = "Gallimea"
+  organization = "Gallimea"
+  organization_url = "https://www.gallimea.ch/"
+  date_start = "2023-08-01"
+  date_end = ""
+  description = """
+  Application web de comptabilité. Amélioration de l'application existante, ajout de fonctionnalités, correctifs de bugs et de vulnérabilités.
+
+  _PHP, JavaScript_
+  """
+
+[[item]]
   title = "Loomis"
   organization = "Junior Enterprise EPFL"
   organization_url = ""
   date_start = "2021-12-15"
-  date_end = ""
+  date_end = "2023-05-01"
   description = """
   Application web permettant à des cliniques / hôpitaux de créer des fiches d'opération.
 
-  Frontend: Vue.js, TypeScript, TailwindCSS
+  _Frontend: Vue.js, TypeScript, TailwindCSS_
   """
 
 [[item]]
@@ -28,6 +40,8 @@ date_format = "Jan 2006"
   date_end = "2022-01-29"
   description = """
   Site de présentation de l'association Namelok. Construction d'écoles, parrainages d'écoliers au Kenya.
+
+  _WordPress_
   """
 
 [[item]]
@@ -38,7 +52,9 @@ date_format = "Jan 2006"
   date_end = "2021-09-01"
   description = """
   Détails:
-   Améliorations, création de composants réutilisables, refactor (Hugo Framework)
+   Améliorations, création de composants réutilisables, refactor. 
+   
+   _Hugo Framework_
   """
 
 [[item]]
@@ -50,7 +66,9 @@ date_format = "Jan 2006"
   description = """
   Détails:
    Installation & configuration serveur apache, déploiement de plusieurs sites.
-   Code review, correction de bugs, mise en production. (Apache, Vue.js, Laravel)
+   Code review, correction de bugs, mise en production.
+   
+   _Apache, Vue.js, Laravel_
   """
 
 [[item]]
@@ -61,7 +79,9 @@ date_format = "Jan 2006"
   date_end = "2020-07-01"
   description = """
   Détails:
-   Refonte web, site statique (Hugo Framework)
+   Refonte web, site statique
+   
+   _Hugo Framework_
   """
 
 [[item]]
@@ -72,6 +92,8 @@ date_format = "Jan 2006"
   date_end = "2021-06-01"
   description = """
   Détails:
-   Audit, correction de bug, migration, (Vue.js, Laravel)
+   Audit, correction de bug, migration.
+   
+   _Vue.js, Laravel_
   """
 +++
