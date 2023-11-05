@@ -26,6 +26,10 @@ module.exports = {
           },
         },
       },
+      colors: {
+        deepblue: '#001521',
+        deepbluegrad: '#001530'
+      }
     },
   },
   plugins: [],

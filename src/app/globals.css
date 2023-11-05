@@ -29,3 +29,22 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.section-title {
+  @apply text-6xl font-bold;
+  display: table;
+  white-space: nowrap;
+
+  &:after {
+    border-top: 1px solid #10b981;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.5em;
+    width: 100%;
+  }
+
+  &:after {
+    left: 1.5%;
+  }
+}
