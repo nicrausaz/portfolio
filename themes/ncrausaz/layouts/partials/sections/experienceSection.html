@@ -1,0 +1,60 @@
+<section class="w-screen h-screen portfolio-blue flex flex-col items-center justify-center" id="experience">
+  <div class="w-1/2">
+    <div class="drop-shadow-[0_0_30px_#10b981]">
+      <h1 class="section-title uppercase">{{ .Site.Data.experience.Title }}</h1>
+    </div>
+    <div class="flex w-full flex-col sm:flex-row mt-10">
+      <div class="mb-4 overflow-x-auto sm:w-max sm:flex-col flex-none">
+        {{ range .Site.Data.experience.experience }}
+        <button
+          class="text-white mb-2 flex h-12 items-center whitespace-nowrap px-4 rounded-xl rounded-l-none exp-button {{ if eq .id 1 }} bg-emerald-500 {{ end }}"
+          data-id="{{ .id }}"
+        >
+          <img src="/img/experiences/{{ .image }}" class="p-2" style="max-width: 40px" />
+
+          {{ .btn_label }}
+        </button>
+        {{ end }}
+      </div>
+      <div class="ml-5">
+        {{ range .Site.Data.experience.experience }}
+        <div class="flex flex-col gap-2 exp-section {{ if ne .id 1 }} hidden {{ end }}" id="sect{{ .id }}">
+          <div class="flex gap-2">
+            <img src="/img/experiences/{{ .image }}" class="p-2" style="max-height: 80px" />
+            <div class="flex flex-col">
+              <span class="text-lg font-bold text-emerald-500">{{ .job_employer }}</span>
+              <span class="text-primary text-sm text-white">{{ .job_description }}</span>
+              <span class="text-sm text-white">{{ .job_location }}</span>
+              <span class="text-sm text-white">{{ .job_timerange }}</span>
+            </div>
+          </div>
+          <p class="text-primary text-sm text-white mt-2">{{ .description }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const buttons = document.querySelectorAll('.exp-button')
+  const cards = document.querySelectorAll('.exp-section')
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const currentButton = button
+      const currentCard = document.querySelector(`#sect${currentButton.dataset.id}`)
+
+      cards.forEach((card) => {
+        card.classList.add('hidden')
+      })
+
+      buttons.forEach((button) => {
+        button.classList.remove('bg-emerald-500')
+      })
+
+      currentCard.classList.remove('hidden')
+      currentButton.classList.add('bg-emerald-500')
+    })
+  })
+</script>

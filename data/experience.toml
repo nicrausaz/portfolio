@@ -1,0 +1,44 @@
+Title = "Experience"
+Subtitle = "During this time, I also worked part-time on many more projects, check them out below !"
+
+[[experience]]
+id = 1
+btn_label = "Actuellement"
+job_employer = "Armée suisse"
+job_description = "Ecole de recrue"
+job_location = ""
+job_timerange = "01.2024 - 05.2024"
+image = "army.png"
+description = '''
+Dès le mois de janvier 2024, j'effectuerai mon école de recrue à l'armée suisse en tant que canonnier mortiers.
+'''
+
+[[experience]]
+id = 2
+btn_label = "2019 - 2023"
+job_employer = "HEIG-VD"
+job_description = "BSc in Software Engineering"
+job_location = "Yverdon-les-Bains, Switzerland"
+job_timerange = "09.2019 - 08.2023"
+image = "heigvd.png"
+description = '''
+Cette formation m'a apporté de nombreuses connaissances dans le domaine du développement logiciel, notamment la conception et programmation orientée objet,
+le développement web, les bases de données et le développement mobile.
+J'ai également pu développer mes compétences en gestion de projet, en travail d'équipe et en communication grâce aux nombreux projets de groupes et laboratoires.
+Mon travail de Bachelor est présenté dans la section "Projets".
+'''
+
+[[experience]]
+id = 3
+btn_label = "2015 - 2019"
+job_employer = "EPFL ENAC-IT"
+job_description = "CFC Informaticien d'entreprise et maturité pro. technique"
+job_location = "Lausanne, Switzerland"
+job_timerange = "08.2015 - 08.2019"
+image = "epfl.png"
+description = '''
+En formation duale avec maturité professionelle intégrée, j'ai pu découvrir le métier d'informaticien d'entreprise et développer mes compétences.
+J'ai travaillé sur différents projets, principalement dans le domaine de développement web.
+J'ai également effectué des tâches de support 1er et 2ème niveau ainsi que de l'administration système et réseau.
+'''
+

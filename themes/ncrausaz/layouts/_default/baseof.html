@@ -1,25 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ site.LanguageCode | default "en-us" }}">
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" . }}
 
-{{ partial "site_head.html" . }}
-
-<body id="top" data-spy="scroll" data-target="{{ if or .IsHome (eq .Type "widget_page") }}#navbar-main{{else}}#TableOfContents{{end}}" data-offset="71" {{ if not (.Scratch.Get "light") }}class="dark"{{end}}>
-
-  {{ partial "search" . }}
-
-  {{ partial "navbar.html" . }}
-
-  {{ block "main" . }}{{ end }}
-
-  {{ partial "site_js.html" . }}
-
-  {{ if ne .Type "docs" }}
-  <div class="container">
-    {{ partial "site_footer.html" . }}
-  </div>
-  {{ end }}
-
-  {{ partial "citation.html" . }}
-
-</body>
+  <body>
+    {{- partial "dev/dev-tools.html" . -}}
+    <main class="overflow-x-hidden bg-gradient-to-b from-deepblue to-deepbluegrad from-75%">
+      {{- partial "header.html" . -}} {{- block "main" . }}{{- end }}
+    </main>
+    {{- partial "footer.html" . -}}
+  </body>
 </html>
