@@ -12,7 +12,6 @@
           href="{{ .Permalink }}"
           target="_blank"
           rel="noreferrer"
-          aria-label=""
         >
           <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
           <span class="text-emerald-500">
@@ -36,7 +35,6 @@
         </a>
       </h3>
       <p class="mt-2 text-sm leading-normal text-white">{{ .Params.Description }}</p>
-
       <ul class="mt-2 flex flex-wrap">
         {{ range .Params.Techs}}
         <li class="mr-1.5 mt-2">
