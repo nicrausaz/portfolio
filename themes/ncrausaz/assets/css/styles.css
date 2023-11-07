@@ -38,6 +38,15 @@ html {
   }
 }
 
+.navbar-active > .nav-indicator {
+  @apply w-16 bg-slate-200
+}
+
+.navbar-active > .nav-text {
+  @apply text-slate-200
+}
+
+
 
 @layer components {
 
