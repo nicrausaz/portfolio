@@ -1,6 +1,0 @@
-baseURL = "https://crausaz.click/"
-DefaultContentLanguage = "fr"
-languageCode = "fr"
-title = "Nicolas Crausaz"
-sitemap = "sitemap.xml"
-theme = "ncrausaz"

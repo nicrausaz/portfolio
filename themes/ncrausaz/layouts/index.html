@@ -1,9 +1,14 @@
-{{- define "main" -}}
+{{ define "main" }}
 
-{{ if not (isset site.Params "color_theme") }}
-  {{ errorf "Please complete the installation of academia by following the steps at https://sourcethemes.com/academic/docs/install/" }}
+{{ partial "header" }}
+
+{{ partial "components/socialLinks" }}
+
+<article>
+  {{ partial "sections/mainSection" . }}
+  {{ partial "sections/aboutSection" . }}
+  {{ partial "sections/experienceSection" . }}
+  {{ partial "sections/projectsSection" . }}
+  {{ partial "sections/contactSection" . }}
+</article>
 {{ end }}
-
-{{ partial "widget_page.html" . }}
-
-{{- end -}}
