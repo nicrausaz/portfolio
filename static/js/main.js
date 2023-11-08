@@ -53,3 +53,26 @@ anime({
   delay: 4000,
   easing: 'easeOutExpo',
 })
+
+// Menu mobile
+document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
+  const menu = document.getElementById('mobile-menu')
+
+  menu.classList.toggle('hidden')
+  
+  // if (menu.classList.contains('hidden')) {
+  //   anime({
+  //     targets: '#mobile-menu',
+  //     opacity: 1,
+  //     duration: 1000,
+  //     easing: 'easeOutExpo',
+  //   })
+  // } else {
+  //   anime({
+  //     targets: '#mobile-menu',
+  //     opacity: 0,
+  //     duration: 1000,
+  //     easing: 'easeOutExpo',
+  //   })
+  // }
+})
