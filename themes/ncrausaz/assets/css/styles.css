@@ -15,14 +15,21 @@
 
 /* Site Specific */
 
-html {
-  scroll-behavior: smooth;
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+}
+
+h1,
+h2 {
+  font-family: 'Roboto Slab', serif;
 }
 
 .section-title {
   @apply text-6xl font-bold text-white;
   display: table;
   white-space: nowrap;
+  margin-bottom: 10px;
 
   &:after {
     border-top: 1px solid #10b981;
@@ -39,15 +46,45 @@ html {
 }
 
 .navbar-active > .nav-indicator {
-  @apply w-16 bg-slate-200
+  @apply w-16 bg-slate-200;
 }
 
 .navbar-active > .nav-text {
-  @apply text-slate-200
+  @apply text-slate-200;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
 
+.projects-section::-webkit-scrollbar {
+  width: 2px;
+}
+
+.projects-section::-webkit-scrollbar-track {
+  background: #001521;
+}
+
+.projects-section::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 50px;
+}
+
+.projects-section::-webkit-scrollbar-thumb:hover {
+  background: #10a981;
+}
 
 @layer components {
-
+  .snap {
+    scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
+  }
+  .snap-y {
+    --scroll-snap-direction: y;
+  }
+  .snap-mandatory {
+    --scroll-snap-constraint: mandatory;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
 }

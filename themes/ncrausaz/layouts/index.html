@@ -1,12 +1,10 @@
 {{ define "main" }}
-
-{{ partial "components/socialLinks" }}
-
-<article>
-  {{ partial "sections/mainSection" . }}
-  {{ partial "sections/aboutSection" . }}
-  {{ partial "sections/experienceSection" . }}
-  {{ partial "sections/projectsSection" . }}
-  {{ partial "sections/contactSection" . }}
-</article>
+  {{ partial "components/socialLinks" }}
+  <div>
+    {{ partial "sections/mainSection" . }}
+    {{ partial "sections/aboutSection" . }}
+    {{ partial "sections/experienceSection" . }}
+    {{ partial "sections/projectsSection" . }}
+    {{ partial "sections/contactSection" . }}
+  </div>
 {{ end }}
