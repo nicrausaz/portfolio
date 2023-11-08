@@ -10,8 +10,6 @@
         <a
           class="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
           href="{{ .Permalink }}"
-          target="_blank"
-          rel="noreferrer"
         >
           <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
           <span class="text-emerald-500">
@@ -34,7 +32,7 @@
           </span>
         </a>
       </h3>
-      <p class="mt-2 text-sm leading-normal text-white">{{ .Params.Description }}</p>
+      <p class="mt-2 text-sm leading-normal text-white line-clamp-4">{{ .Params.Description }}</p>
       <ul class="mt-2 flex flex-wrap font-mono">
         {{ range .Params.Techs }}
         <li class="mr-1.5 mt-2">

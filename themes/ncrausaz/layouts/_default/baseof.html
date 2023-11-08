@@ -3,7 +3,7 @@
   {{ partial "head.html" . }}
 
   <body>
-    {{- partial "dev/dev-tools.html" . -}}
+    {{/*- partial "dev/dev-tools.html" . -*/}}
     <main class="overflow-x-hidden overflow-y-scroll bg-gradient-to-b from-deepblue to-deepbluegrad from-75%">
       {{- partial "header.html" . -}} {{- block "main" . }}{{- end }}
     </main>
