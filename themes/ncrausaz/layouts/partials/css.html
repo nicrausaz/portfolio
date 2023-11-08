@@ -1,6 +1,6 @@
 {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
 {{- if .Site.IsServer }}
-{{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/styles.dev.%v.css" now.UnixMilli) .}}
+{{ $styles = $styles | resources.ExecuteAsTemplate "/styles.dev.css" .}}
 {{ else }}
 {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ end -}}

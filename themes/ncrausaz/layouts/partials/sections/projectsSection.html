@@ -1,24 +1,24 @@
-<section class="w-screen h-screen flex flex-col items-center justify-center section" id="projects">
+<section class="w-screen h-screen flex flex-col items-center justify-center section opacity-0" id="projects">
   <div class="w-1/2">
     <div class="drop-shadow-[0_0_30px_#10b981]">
       <h1 class="section-title uppercase">Projets</h1>
     </div>
 
-    <h4 class="text-2xl text-emerald-500">Freelance</h4>
+    <h2 class="text-2xl text-emerald-500">Freelance</h4>
     <p class="text-white">J'ai réalisé les projets suivant de manière professionelle, la plupart à temps partiel à côté de mes études. Il m'ont permi de mettre en application mes compétences techniques</p>
-    <div class="mt-2 overflow-y-scroll overflow-x-hidden grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-2" style="max-height: 300px">
+    <div class="mt-2 overflow-y-scroll overflow-x-hidden grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-2 projects-section" style="max-height: 300px">
       {{ range where .Site.RegularPages ".Params.projectType" "Freelance" }}
         {{ partial "components/projectCard" . }}
       {{ end }}
     </div>
 
     <div class="inline-flex items-center justify-center w-full my-12">
-      <hr class="w-80 h-0.5 bg-gray-200 border-0 rounded dark:bg-emerald-500" />
+      <hr class="w-80 h-0.5 bg-gray-700 border-0 rounded" />
     </div>
 
-    <h4 class="text-2xl text-emerald-500">Projets formatifs / de groupe</h4>
+    <h2 class="text-2xl text-emerald-500">Projets formatifs / de groupe</h4>
     <p class="text-white">Les projets suivants ont pour la plupars été réalisés en groupe durant ma formation à la HEIG-VD.</p>
-    <div class="mt-2 overflow-y-scroll overflow-x-hidden grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-2" style="max-height: 300px">
+    <div class="mt-2 overflow-y-scroll overflow-x-hidden grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-2 projects-section" style="max-height: 300px">
       {{ range where .Site.RegularPages ".Params.projectType" "School" }}
         {{ partial "components/projectCard" . }}
       {{ end }}

@@ -1,5 +1,5 @@
 <nav class="flex flex-col justify-center fixed h-screen">
-  <ul class="w-max">
+  <ul class="w-max opacity-0" id="nav-content">
     {{ $current_page := . }} {{ range site.Menus.main }}
     <li>
       {{ $active := in $current_page.RelPermalink .URL }}
