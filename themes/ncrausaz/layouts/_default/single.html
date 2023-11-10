@@ -1,22 +1,24 @@
 {{ define "main" }}
 <article class="flex flex-col items-center text-white h-screen mt-10">
-  <div class="w-1/2">
+  <div class="w-2/3 lg:w-1/2">
     <div class="drop-shadow-[0_0_30px_#10b981]">
       <h1 class="section-title uppercase">{{ .Title }}</h1>
     </div>
     <div class="w-full">
       <div class="flex items-center justify-between w-full">
         <div>
-          {{ if .Params.mandator }} 
-          Mandaté par
-          <a href="{{ .Params.mandator_url }}" target="_blank" class="underline decoration-emerald-500 hover:text-emerald-500"
+          {{ if .Params.mandator }} Mandaté par
+          <a
+            href="{{ .Params.mandator_url }}"
+            target="_blank"
+            class="underline decoration-emerald-500 hover:text-emerald-500"
             >{{ .Params.mandator }}</a
           >
           {{ end }}
         </div>
 
         <div class="flex gap-2">
-          {{ if .Params.github }} 
+          {{ if .Params.github }}
           <a href="{{ .Params.github }}" target="_blank" class="text-slate-400"
             ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
               <path
@@ -25,8 +27,7 @@
               />
             </svg>
           </a>
-          {{ end }}
-          {{ if .Params.website }} 
+          {{ end }} {{ if .Params.website }}
           <a href="{{ .Params.website }}" target="_blank" class="text-slate-400"
             ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
               <path
@@ -49,7 +50,9 @@
         </li>
         {{ end }}
       </ul>
-      <!-- <img src="/img/projects/featured/{{ .Params.featured_image }}"  height="20px"/> -->
+      {{ if .Params.featured_image }}
+      <img src="/img/projects/featured/{{ .Params.featured_image }}" height="20px" class="mt-10" />
+      {{ end }}
     </div>
 
     <div class="inline-flex items-center justify-center w-full my-8">

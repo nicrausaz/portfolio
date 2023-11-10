@@ -54,12 +54,19 @@ anime({
   easing: 'easeOutExpo',
 })
 
+anime({
+  targets: '#main-title > h4',
+  translateX: 100,
+  direction: 'alternate',
+  easing: 'easeInExpo',
+})
+
 // Menu mobile
 document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
   const menu = document.getElementById('mobile-menu')
 
   menu.classList.toggle('hidden')
-  
+
   // if (menu.classList.contains('hidden')) {
   //   anime({
   //     targets: '#mobile-menu',
@@ -75,4 +82,42 @@ document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
   //     easing: 'easeOutExpo',
   //   })
   // }
+})
+
+// Bouton projets
+const tabs = document.querySelectorAll('.tab-btn')
+const contents = document.querySelectorAll('.tab-content')
+
+tabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    const targetId = tab.getAttribute('data-target')
+    const targetContent = document.getElementById(targetId)
+
+    anime({
+      targets: contents,
+      opacity: 0,
+      duration: 300,
+      easing: 'linear',
+      complete: () => {
+        contents.forEach((content) => {
+          content.classList.add('hidden')
+        })
+        targetContent.classList.remove('hidden')
+
+        // tabs.forEach((tab) => {
+        //   tab.classList.remove('bg-emerald-500')
+        //   tab.classList.remove('text-emerald-500')
+        // })
+        // tab.classList.add('bg-emerald-500')
+        // tab.classList.add('text-white')
+
+        anime({
+          targets: targetContent,
+          opacity: 1,
+          duration: 300,
+          easing: 'linear',
+        })
+      },
+    })
+  })
 })
