@@ -8,7 +8,7 @@ mandator_url = ""
 description = '''
 Studystorm est une application web qui aide les étudiants à étudier plus efficacement. Il s'agit d'une plateforme qui permet aux étudiants de créer des flashcards, des quiz et des groupes d'étude
 '''
-techs = ["Nuxt.js", "Vue.js", "Adonis.js", "TypeScript"]
+techs = ["Vue.js", "Adonis.js", "TypeScript"]
 image = "studystorm.svg"
 featured_image = "cover-studystorm.png"
 github = "https://github.com/StudyStorm"
