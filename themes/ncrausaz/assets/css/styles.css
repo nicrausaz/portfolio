@@ -5,14 +5,6 @@
 @tailwind utilities;
 @tailwind variants;
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 24, 43, 129;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
 /* Site Specific */
 
 @font-face {
@@ -51,6 +43,10 @@ h2 {
 
 .navbar-active > .nav-text {
   @apply text-slate-200;
+}
+
+.project-active {
+  @apply bg-emerald-500;
 }
 
 ::-webkit-scrollbar {
