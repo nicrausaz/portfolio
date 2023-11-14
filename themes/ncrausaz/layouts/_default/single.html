@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="flex flex-col items-center text-white h-screen mt-10">
+<article class="flex flex-col items-center text-white min-h-screen mt-10">
   <div class="w-2/3 lg:w-1/2">
     <div class="drop-shadow-[0_0_30px_#10b981]">
       <h1 class="section-title uppercase">{{ .Title }}</h1>
@@ -7,13 +7,15 @@
     <div class="w-full">
       <div class="flex items-center justify-between w-full">
         <div>
-          {{ if .Params.mandator }} Mandaté par
-          <a
-            href="{{ .Params.mandator_url }}"
-            target="_blank"
-            class="underline decoration-emerald-500 hover:text-emerald-500"
-            >{{ .Params.mandator }}</a
-          >
+          <h1>
+            {{ if .Params.mandator }} Mandaté par
+            <a
+              href="{{ .Params.mandator_url }}"
+              target="_blank"
+              class="underline decoration-emerald-500 hover:text-emerald-500"
+              >{{ .Params.mandator }}
+            </a>
+          </h1>
           {{ end }}
         </div>
 
@@ -51,7 +53,9 @@
         {{ end }}
       </ul>
       {{ if .Params.featured_image }}
-      <img src="/img/projects/featured/{{ .Params.featured_image }}" height="20px" class="mt-10" />
+      <div class="flex justify-center">
+        <img src="/img/projects/featured/{{ .Params.featured_image }}" class="mt-10 max-h-96" />
+      </div>
       {{ end }}
     </div>
 
@@ -61,27 +65,26 @@
 
     <div class="text-justify my-4">{{ .Content }}</div>
 
+    {{ if and .Params.project_start .Params.project_end }}
+    <div class="float-right border-t-2 border-emerald-500 mt-6">
+      <h2 class="mt-2 text-emerald-500">{{ .Params.project_start }} - {{ .Params.project_end }}</h2>
+    </div>
+    {{ end }}
+
     <div class="inline-flex items-center justify-center w-full my-8">
       <hr class="w-80 h-0.5 bg-gray-700 border-0 rounded" />
     </div>
 
-    <a
-      class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-b from-emerald-800 to-deepbluegrad group-hover:from-emerald-800 group-hover:to-deepbluegrad hover:text-white dark:text-white"
-      href="/#projects"
-    >
-      <span
-        class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-deepblue rounded-md group-hover:bg-opacity-0 flex items-center justify-between"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 24 24">
-          <path
-            fill="currentColor"
-            fill-rule="evenodd"
-            d="M14.03 7.47a.75.75 0 0 1 0 1.06L10.56 12l3.47 3.47a.75.75 0 1 1-1.06 1.06l-4-4a.75.75 0 0 1 0-1.06l4-4a.75.75 0 0 1 1.06 0Z"
-            clip-rule="evenodd"
-          />
-        </svg>
-        Retour
-      </span>
+    <a class="outline outline-2 outline-offset-2 outline-emerald-500 text-emerald-500 hover:outline-white hover:text-white transition inline-block relative p-2 rounded-md" href="/#projects">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 absolute left-0 transition-transform duration-300 transform translate-x-0 group-hover:translate-x-[-4px]" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          fill-rule="evenodd"
+          d="M14.03 7.47a.75.75 0 0 1 0 1.06L10.56 12l3.47 3.47a.75.75 0 1 1-1.06 1.06l-4-4a.75.75 0 0 1 0-1.06l4-4a.75.75 0 0 1 1.06 0Z"
+          clip-rule="evenodd"
+        />
+      </svg>
+      <span class="relative ml-6">Retour</span>
     </a>
   </div>
 </article>

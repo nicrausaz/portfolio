@@ -47,10 +47,18 @@ anime({
 })
 
 anime({
+  targets: '#social-block',
+  opacity: 1,
+  duration: 2000,
+  delay: 2000,
+  easing: 'easeOutExpo',
+})
+
+anime({
   targets: '#call-to-scroll',
   opacity: 1,
   duration: 1000,
-  delay: 4000,
+  delay: 3000,
   easing: 'easeOutExpo',
 })
 
@@ -60,6 +68,15 @@ anime({
   direction: 'alternate',
   easing: 'easeInExpo',
 })
+
+// anime({
+//   targets: '#experience-progress-line',
+//   strokeDashoffset: [anime.setDashoffset, 0],
+//   easing: 'easeInOutSine',
+//   duration: 3000,
+//   direction: 'alternate',
+//   loop: true
+// });
 
 // Menu mobile
 document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
@@ -104,12 +121,10 @@ tabs.forEach((tab) => {
         })
         targetContent.classList.remove('hidden')
 
-        // tabs.forEach((tab) => {
-        //   tab.classList.remove('bg-emerald-500')
-        //   tab.classList.remove('text-emerald-500')
-        // })
-        // tab.classList.add('bg-emerald-500')
-        // tab.classList.add('text-white')
+        tabs.forEach((tab) => {
+          tab.classList.remove('project-active')
+        })
+        tab.classList.add('project-active')
 
         anime({
           targets: targetContent,
@@ -121,3 +136,14 @@ tabs.forEach((tab) => {
     })
   })
 })
+
+function myAge() {
+  const birthday = new Date(1999, 7, 3)
+  const ageDifMs = Date.now() - birthday.getTime()
+  const ageDate = new Date(ageDifMs)
+  return Math.abs(ageDate.getUTCFullYear() - 1970)
+}
+
+// Remplace le texte par l'âge
+const age = document.getElementById('age')
+age.innerHTML = myAge()
