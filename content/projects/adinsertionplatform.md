@@ -12,6 +12,8 @@ techs = ["Hugo"]
 image = "adinsert.png"
 featured_image = "adinsert.png"
 website = "https://www.adinsertplatform.com/"
+project_start = "Septembre"
+project_end = "Septembre 2021"
 +++
 
 Ad Insertion Platform est une entreprise spécialisée dans l'insertion de publicités dans les flux vidéos.

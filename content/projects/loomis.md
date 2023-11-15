@@ -10,6 +10,8 @@ Elixir est une application destinée aux cliniques et hopitaux pratiquant des op
 '''
 techs = ["Vue.js", "TypeScript"]
 image = "jeepfl.png"
+project_start = "Décembre 2021"
+project_end = "Mai 2023"
 +++
 
 Elixir est une application destinées aux cliniques et hopitaux pratiquant des opération chirurgicales. Elle permet de gérer tous les acteurs intervenant dans une opération chirurgiens, anesthésistes, infirmiers, aides-soignants, etc.

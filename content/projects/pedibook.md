@@ -8,6 +8,8 @@ mandator_url = "https://je.epfl.ch/"
 description = '''PediBook est une application permettant d’afficher et consulter sur téléphone du contenu rédigé par des médecins du CHUV '''
 techs = ["Laravel", "Vue.js"]
 image = "pedibook.jpeg"
+project_start = "Mars"
+project_end = "Juin 2021"
 +++
 
 PediBook est une application permettant d’afficher et consulter sur téléphone du contenu rédigé par des médecins du Centre Hospitalier Universitaire Vaudois (CHUV). L'application se présente sous la forme d'un livre numérique. Il existe une application mobile pour Android et iOS, ainsi qu'une application web.

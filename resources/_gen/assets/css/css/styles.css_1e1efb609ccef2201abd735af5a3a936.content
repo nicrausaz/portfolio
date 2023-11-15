@@ -498,6 +498,9 @@ video {
 .top-0 {
   top: 0px;
 }
+.top-20 {
+  top: 5rem;
+}
 .top-4 {
   top: 1rem;
 }
@@ -647,6 +650,9 @@ video {
 .h-12 {
   height: 3rem;
 }
+.h-24 {
+  height: 6rem;
+}
 .h-32 {
   height: 8rem;
 }
@@ -677,8 +683,14 @@ video {
 .min-h-screen {
   min-height: 100vh;
 }
+.w-1\/2 {
+  width: 50%;
+}
 .w-2\/3 {
   width: 66.666667%;
+}
+.w-24 {
+  width: 6rem;
 }
 .w-4 {
   width: 1rem;
@@ -755,6 +767,9 @@ video {
 .scroll-py-4 {
   scroll-padding-top: 1rem;
   scroll-padding-bottom: 1rem;
+}
+.list-disc {
+  list-style-type: disc;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -918,6 +933,10 @@ video {
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
 }
 .bg-red-200 {
   --tw-bg-opacity: 1;
@@ -1116,6 +1135,9 @@ video {
 }
 .opacity-0 {
   opacity: 0;
+}
+.opacity-30 {
+  opacity: 0.3;
 }
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
@@ -1422,6 +1444,10 @@ video {
   src: url('/fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
 }
 
+body {
+  /* cursor: none; */
+}
+
 h1,
 h2 {
   font-family: 'Roboto Slab', serif;
@@ -1475,6 +1501,21 @@ h2 {
 .project-active {
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
+}
+
+.cursor {
+  pointer-events: none;
+  cursor: none;
+}
+.cursor__ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+.cursor__ball circle {
+  fill: #f7f8fa;
 }
 
 ::-webkit-scrollbar {
