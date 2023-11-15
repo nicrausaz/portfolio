@@ -147,3 +147,58 @@ function myAge() {
 // Remplace le texte par l'âge
 const age = document.getElementById('age')
 age.innerHTML = myAge()
+
+// On page load
+const svgDocument = document.getElementById('progress-exp-parent').contentDocument
+var svgElement = svgDocument.getElementById('progress-line-experience')
+console.log(svgElement)
+if (svgElement) {
+  svgElement.style.fill = 'red' // Changer la couleur de remplissage en rouge
+}
+
+// Fonction pour animer les chemins SVG progressivement
+// function animatePaths(paths, index) {
+//   if (index < paths.length) {
+//     console.log(paths[index])
+//     paths[index].style.stroke = '#fff'
+//     paths[index].style.fill = '#fff'
+//     paths[index].style.transition = 'stroke-dasharray 1.5s ease-in-out'
+//     paths[index].style.strokeDasharray = paths[index].getTotalLength()
+//     paths[index].style.strokeDashoffset = paths[index].getTotalLength()
+//     setTimeout(() => {
+//       paths[index].style.strokeDashoffset = '0'
+//       animatePaths(paths, index + 1)
+//     }, 500)
+//   }
+// }
+
+// animatePaths(paths, 0)
+
+// Cursor
+// const bigBall = document.querySelector('.cursor__ball--big');
+// const smallBall = document.querySelector('.cursor__ball--small');
+// const hoverables = document.querySelectorAll('.hoverable');
+
+// // Listeners
+// document.body.addEventListener('mousemove', onMouseMove);
+// for (let i = 0; i < hoverables.length; i++) {
+//   hoverables[i].addEventListener('mouseenter', onMouseHover);
+//   hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
+// }
+
+// // Move the cursor
+// function onMouseMove(e) {
+//   smallBall.style.left = e.pageX - 5  + 'px';
+//   smallBall.style.top = e.pageY - 7  + 'px';
+// }
+
+// // Hover an element
+// function onMouseHover() {
+//   smallBall.style.transition = 'transform 0.3s ease';
+//   smallBall.style.transform = 'scale(4)';
+// }
+
+// function onMouseHoverOut() {
+//   smallBall.style.transition = 'transform 0.3s ease';
+//   smallBall.style.transform = 'scale(1)';
+// }

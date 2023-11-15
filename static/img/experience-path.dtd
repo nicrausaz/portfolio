@@ -1,0 +1,8 @@
+<!ELEMENT svg (g+)>
+<!ATTLIST svg version NMTOKEN #REQUIRED>
+<!ATTLIST svg viewBox CDATA #REQUIRED>
+<!ELEMENT g (path+)>
+<!ATTLIST g id NMTOKEN #IMPLIED>
+<!ELEMENT path EMPTY>
+<!ATTLIST path fill CDATA #REQUIRED>
+<!ATTLIST path d CDATA #REQUIRED>

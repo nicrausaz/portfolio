@@ -12,11 +12,15 @@ techs = ["WordPress"]
 image = "namelok.png"
 featured_image = "namelok.png"
 website = "https://namelok.com/"
+project_start = "Janvier"
+project_end = "Janvier 2021"
 +++
 
 <!-- {{< blockquote >}} -->
 
 Namelok Farm Association est une association fondée en août 2019 sur les hauts de Morges en Suisse ayant les objectifs suivants :
+
+{{<lnbreak>}}
 
 - Un soutien aux écoles par l’achat de matériel scolaire, de mobilier, la création de cantines, la construction de toilettes sèches et autres besoins
 
@@ -28,12 +32,18 @@ Namelok Farm Association est une association fondée en août 2019 sur les hauts
 
 - Tout autre projet permettant la mise en place de l’association au Kenya ainsi qu’une aide à la population aux alentours de Naikarra
 
+{{<lnbreak>}}
 
-Deuxièmement, l’Association a pour but en Suisse, en France et en Belgique, de faire connaître la culture maasaïe, ses traditions, sa sagesse, de faire découvrir leur manière de vivre et, au besoin, de prendre leur défense. 
+Deuxièmement, l’Association a pour but en Suisse, en France et en Belgique, de faire connaître la culture maasaïe, ses traditions, sa sagesse, de faire découvrir leur manière de vivre et, au besoin, de prendre leur défense.
 
-Namelok Farm association est jumelée avec Namelok Camp Association. Ella a été enregistrée au Kenya en novembre 2019 et poursuit bien évidemment les mêmes buts.
+{{<lnbreak>}}
 
+Namelok Farm Association est jumelée avec Namelok Camp Association. Ella a été enregistrée au Kenya en novembre 2019 et poursuit bien évidemment les mêmes buts.
 
+{{<lnbreak>}}
 
+{{<center>}}
 
-https://www.facebook.com/profile.php?id=100067562353571
+{{<button label="Plus de contenu sur Namelok Farm Association" to="https://www.facebook.com/profile.php?id=100067562353571" >}}
+
+{{</center>}}

@@ -2,7 +2,16 @@
 <html lang="{{ .Site.LanguageCode }}" class="scroll-smooth">
   {{ partial "head.html" . }}
 
+
   <body class="overflow-x-hidden overflow-y-scroll bg-gradient-to-b from-deepblue to-deepbluegrad from-75%">
+
+  <!-- <div class="cursor">
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+      </svg>
+    </div>
+  </div> -->
     {{ if not hugo.IsProduction }}
       {{- partial "dev/dev-tools.html" . -}}
     {{ end }}

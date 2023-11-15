@@ -12,6 +12,8 @@ techs = ["Vue.js", "Laravel", "Apache"]
 image = "myjob.svg"
 featured_image = "myjob.png"
 website = "https://myjob.epfl.ch/"
+project_start = "Avril"
+project_end = "Août 2021"
 +++
 
 MyJob est une application de la Junior Entreprise de l'EPFL qui permet à des employeurs de proposer des jobs étudiants aux étudiants de l'EPFL.

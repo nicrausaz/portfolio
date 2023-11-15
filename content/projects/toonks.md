@@ -9,7 +9,9 @@ description = '''
 Toonks est un jeu de tank 3D multijoueur en ligne. Ce projet à été réalisé dans le cadre du cours WEB de l'HEIG-VD, sur une période de 2 mois. Ce projet à été présenté pendant les portes ouvertes de l'HEIG-VD 2023.
 '''
 techs = ["Three.js", "React", "TypeScript"]
-Image = "toonks.svg"
+image = "toonks.svg"
+github = "https://github.com/maxscharwath/toonks-game"
+website = "https://toonks.com/"
 +++
 
 Elixir est une application destinées aux cliniques et hopitaux pratiquant des opération chirurgicales. Elle permet de gérer tous les acteurs intervenant dans une opération chirurgiens, anesthésistes, infirmiers, aides-soignants, etc.
