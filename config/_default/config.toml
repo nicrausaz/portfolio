@@ -1,18 +1,12 @@
 title = "Nicolas Crausaz"
 baseURL = "https://crausaz.click/"
-copyright = "&copy; {year} - Nicolas Crausaz"
-
-# Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
-
 theme = "ncrausaz"
 sitemap = "sitemap.xml"
-
-# Default language to use (if you setup multilingual support)
 defaultContentLanguage = "fr"
-hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
+hasCJKLanguage = false 
 defaultContentLanguageInSubdir = false
-removePathAccents = true  # Workaround for https://github.com/gohugoio/hugo/issues/5687
-
 [taxonomies]
 
+[services]
+  [services.googleAnalytics]
+    ID = 'G-7GV42PYC7G'

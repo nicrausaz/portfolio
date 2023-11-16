@@ -1,12 +1,7 @@
-{{ define "main" }}
-{{- partial "header.html" . -}} 
-  {{- partial "components/socialLinks" -}}
-  <div>
-    {{- partial "sections/mainSection" . -}}
-    {{- partial "sections/aboutSection" . -}}
-    {{- partial "sections/experienceSection" . -}}
-    {{- partial "sections/projectsSection" . -}}
-    {{- partial "sections/contactSection" . -}}
-  </div>
-{{- partial "footer.html" . -}}
-{{ end }}
+{{ define "main" }} {{- partial "header.html" . -}} {{- partial "components/socialLinks" -}}
+<div>
+  {{- partial "sections/mainSection" . -}} {{- partial "sections/aboutSection" . -}} {{- partial
+  "sections/experienceSection" . -}} {{- partial "sections/projectsSection" . -}} {{- partial "sections/contactSection"
+  . -}}
+</div>
+{{- partial "footer.html" . -}} {{ end }}
