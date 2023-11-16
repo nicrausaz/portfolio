@@ -16,8 +16,6 @@ project_start = "Janvier"
 project_end = "Janvier 2021"
 +++
 
-<!-- {{< blockquote >}} -->
-
 Namelok Farm Association est une association fondée en août 2019 sur les hauts de Morges en Suisse ayant les objectifs suivants :
 
 {{<lnbreak>}}

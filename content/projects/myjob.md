@@ -20,4 +20,4 @@ MyJob est une application de la Junior Entreprise de l'EPFL qui permet à des em
 
 {{<lnbreak>}}
 
-Mon travail à consisté à corriger des vulnérabilités critique au niveau du code et de la configuration du serveur Apache. J'ai également réalisé des correctifs de bugs et ajouté des fonctionnalités. Ce mandat s'est cloturé par la mise en place d'une nouvelle infrastructure de production, sous Apache, et la mise en production de l'application.
+Mon travail a consisté à corriger des vulnérabilités critiques au niveau du code et de la configuration du serveur Apache. J'ai également réalisé des correctifs de bugs et ajouté des fonctionnalités. Ce mandat s'est clôturé par la mise en place d'une nouvelle infrastructure de production, sous Apache, et la mise en production de l'application.
