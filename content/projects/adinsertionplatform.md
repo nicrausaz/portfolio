@@ -16,7 +16,7 @@ project_start = "Septembre"
 project_end = "Septembre 2021"
 +++
 
-Ad Insertion Platform est une entreprise spécialisée dans l'insertion de publicités dans les flux vidéos.
+Ad Insertion Platform est une entreprise spécialisée dans l'insertion de publicité dans les flux vidéo.
 
 {{<lnbreak>}}
 
@@ -24,8 +24,8 @@ J'ai été mandaté à deux reprises pour réaliser le site web de l'entreprise.
 
 {{<lnbreak>}}
 
-Le premier mandat à consisté en la transformation du site actuel en un site statique qui puisse être modifié directement par le client. Le site a été réalisé avec le générateur de site statique [Hugo](https://gohugo.io/).
+Le premier mandat a consisté en la transformation du site actuel en un site statique qui puisse être modifié directement par le client. Le site a été réalisé avec le générateur de site statique [Hugo](https://gohugo.io/).
 
 {{<lnbreak>}}
 
-Le second mandat aporte des modifications au site existant et l'ajout de nouvelles fonctionnalités: des nouvelles pages de contenu ainsi que l'ajout d'un blog (news) et des offres d'emploi de l'entreprise.
+Le second mandat apporte des modifications au site existant et l'ajout de nouvelles fonctionnalités: des nouvelles pages de contenu ainsi que l'ajout d'un blog (news) et des offres d'emploi de l'entreprise.

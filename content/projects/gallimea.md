@@ -18,4 +18,4 @@ project_end = "Décembre 2023"
 
 Gallimea est une application de comptabilité destinées aux petites entreprises, indépendants, clubs et associations.
 
-Mon travail a consisté à reprendre l'application existante et dans un premier temps de corriger des vulnérabilités, bugs et améliorer la qualité du code. Dans un second temps, j'ai ajouté de nouvelles fonctionnalités jusqu'à la mise en production d'une toute nouvelle version de l'application.
+Mon travail a consisté à reprendre l'application existante et dans un premier temps à corriger des vulnérabilités, bugs et améliorer la qualité du code. Dans un second temps, j'ai ajouté de nouvelles fonctionnalités jusqu'à la mise en production d'une toute nouvelle version de l'application.
