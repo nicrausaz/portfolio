@@ -1,20 +1,20 @@
 Title = "Expérience"
 Subtitle = "During this time, I also worked part-time on many more projects, check them out below !"
 
-[[experience]]
-id = 1
-btn_label = "Actuellement"
-job_employer = "Armée suisse"
-job_description = "Ecole de recrue"
-job_location = ""
-job_timerange = "01.2024 - 05.2024"
-image = "army.png"
-description = '''
-Dès le mois de janvier 2024, j'effectuerai mon école de recrue à l'armée suisse en tant que canonnier mortiers.
-'''
+# [[experience]]
+# id = 1
+# btn_label = "Actuellement"
+# job_employer = "Armée suisse"
+# job_description = "Ecole de recrue"
+# job_location = ""
+# job_timerange = "01.2024 - 05.2024"
+# image = "army.png"
+# description = '''
+# Dès le mois de janvier 2024, j'effectuerai mon école de recrue à l'armée suisse en tant que canonnier mortiers.
+# '''
 
 [[experience]]
-id = 2
+id = 1
 btn_label = "2019 - 2023"
 job_employer = "HEIG-VD"
 job_description = "BSc in Software Engineering"

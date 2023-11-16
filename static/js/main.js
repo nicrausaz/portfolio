@@ -69,36 +69,65 @@ anime({
   easing: 'easeInExpo',
 })
 
-// anime({
-//   targets: '#experience-progress-line',
-//   strokeDashoffset: [anime.setDashoffset, 0],
-//   easing: 'easeInOutSine',
-//   duration: 3000,
-//   direction: 'alternate',
-//   loop: true
-// });
-
 // Menu mobile
 document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
   const menu = document.getElementById('mobile-menu')
 
-  menu.classList.toggle('hidden')
+  // TODO: better animation
+  if (menu.classList.contains('hidden')) {
+    anime({
+      targets: '#mobile-menu',
+      duration: 1000,
+      begin: () => {
+        menu.classList.remove('hidden')
+      },
+    })
+  } else {
+    anime({
+      targets: '#mobile-menu',
+      duration: 1000,
+      begin: () => {
+        menu.classList.add('hidden')
+      },
+    })
+  }
+})
 
-  // if (menu.classList.contains('hidden')) {
-  //   anime({
-  //     targets: '#mobile-menu',
-  //     opacity: 1,
-  //     duration: 1000,
-  //     easing: 'easeOutExpo',
-  //   })
-  // } else {
-  //   anime({
-  //     targets: '#mobile-menu',
-  //     opacity: 0,
-  //     duration: 1000,
-  //     easing: 'easeOutExpo',
-  //   })
-  // }
+// Bouton expériences
+const buttons = document.querySelectorAll('.exp-button')
+const cards = document.querySelectorAll('.exp-section')
+
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const currentButton = button
+    const currentCard = document.querySelector(`#sect${currentButton.dataset.id}`)
+
+    anime({
+      targets: cards,
+      opacity: 0,
+      duration: 300,
+      easing: 'linear',
+      complete: () => {
+        cards.forEach((card) => {
+          card.classList.add('hidden')
+        })
+
+        buttons.forEach((button) => {
+          button.classList.remove('bg-emerald-500')
+        })
+
+        currentCard.classList.remove('hidden')
+        currentButton.classList.add('bg-emerald-500')
+
+        anime({
+          targets: currentCard,
+          opacity: 1,
+          duration: 300,
+          easing: 'linear',
+        })
+      },
+    })
+  })
 })
 
 // Bouton projets
@@ -148,57 +177,27 @@ function myAge() {
 const age = document.getElementById('age')
 age.innerHTML = myAge()
 
-// On page load
-const svgDocument = document.getElementById('progress-exp-parent').contentDocument
-var svgElement = svgDocument.getElementById('progress-line-experience')
-console.log(svgElement)
-if (svgElement) {
-  svgElement.style.fill = 'red' // Changer la couleur de remplissage en rouge
-}
+// Anime the experience path
+const experiencePathParent = document.getElementById('progress-exp-parent')
+experiencePathParent.addEventListener('load', () => {
+  const svgDocument = experiencePathParent.contentDocument
+  const svgElement = svgDocument.getElementById('progress-line-experience')
+  const paths = [...svgElement.querySelectorAll('path')].reverse()
+
+  animatePaths(paths, 0)
+})
 
 // Fonction pour animer les chemins SVG progressivement
-// function animatePaths(paths, index) {
-//   if (index < paths.length) {
-//     console.log(paths[index])
-//     paths[index].style.stroke = '#fff'
-//     paths[index].style.fill = '#fff'
-//     paths[index].style.transition = 'stroke-dasharray 1.5s ease-in-out'
-//     paths[index].style.strokeDasharray = paths[index].getTotalLength()
-//     paths[index].style.strokeDashoffset = paths[index].getTotalLength()
-//     setTimeout(() => {
-//       paths[index].style.strokeDashoffset = '0'
-//       animatePaths(paths, index + 1)
-//     }, 500)
-//   }
-// }
-
-// animatePaths(paths, 0)
-
-// Cursor
-// const bigBall = document.querySelector('.cursor__ball--big');
-// const smallBall = document.querySelector('.cursor__ball--small');
-// const hoverables = document.querySelectorAll('.hoverable');
-
-// // Listeners
-// document.body.addEventListener('mousemove', onMouseMove);
-// for (let i = 0; i < hoverables.length; i++) {
-//   hoverables[i].addEventListener('mouseenter', onMouseHover);
-//   hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
-// }
-
-// // Move the cursor
-// function onMouseMove(e) {
-//   smallBall.style.left = e.pageX - 5  + 'px';
-//   smallBall.style.top = e.pageY - 7  + 'px';
-// }
-
-// // Hover an element
-// function onMouseHover() {
-//   smallBall.style.transition = 'transform 0.3s ease';
-//   smallBall.style.transform = 'scale(4)';
-// }
-
-// function onMouseHoverOut() {
-//   smallBall.style.transition = 'transform 0.3s ease';
-//   smallBall.style.transform = 'scale(1)';
-// }
+function animatePaths(paths, index) {
+  if (index < paths.length) {
+    paths[index].style.stroke = '#57c2a6'
+    paths[index].style.fill = '#57c2a6'
+    paths[index].style.transition = 'stroke-dasharray 1.5s ease-in-out'
+    paths[index].style.strokeDasharray = paths[index].getTotalLength()
+    paths[index].style.strokeDashoffset = paths[index].getTotalLength()
+    setTimeout(() => {
+      paths[index].style.strokeDashoffset = '0'
+      animatePaths(paths, index + 1)
+    }, 50)
+  }
+}
