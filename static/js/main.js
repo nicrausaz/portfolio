@@ -177,27 +177,34 @@ function myAge() {
 const age = document.getElementById('age')
 age.innerHTML = myAge()
 
-// Anime the experience path
-const experiencePathParent = document.getElementById('progress-exp-parent')
-experiencePathParent.addEventListener('load', () => {
+// Anime the experience path when visible
+const pathObserver = new IntersectionObserver((entries) => {
+  if (!entries[0].isIntersecting) {
+    return
+  }
+
+  const animatePaths = (paths, index) => {
+    if (index < paths.length) {
+      paths[index].style.stroke = '#57c2a6'
+      paths[index].style.fill = '#57c2a6'
+      paths[index].style.transition = 'stroke-dasharray 1.5s ease-in-out'
+      paths[index].style.strokeDasharray = paths[index].getTotalLength()
+      paths[index].style.strokeDashoffset = paths[index].getTotalLength()
+      setTimeout(() => {
+        paths[index].style.strokeDashoffset = '0'
+        animatePaths(paths, index + 1)
+      }, 50)
+    }
+  }
+
+  const experiencePathParent = document.getElementById('progress-exp-parent')
   const svgDocument = experiencePathParent.contentDocument
   const svgElement = svgDocument.getElementById('progress-line-experience')
-  const paths = [...svgElement.querySelectorAll('path')].reverse()
 
-  animatePaths(paths, 0)
-})
+  setTimeout(() => {
+    animatePaths([...svgElement.querySelectorAll('path')].reverse(), 0)
+  }, 1000)
+  
+}, options)
 
-// Fonction pour animer les chemins SVG progressivement
-function animatePaths(paths, index) {
-  if (index < paths.length) {
-    paths[index].style.stroke = '#57c2a6'
-    paths[index].style.fill = '#57c2a6'
-    paths[index].style.transition = 'stroke-dasharray 1.5s ease-in-out'
-    paths[index].style.strokeDasharray = paths[index].getTotalLength()
-    paths[index].style.strokeDashoffset = paths[index].getTotalLength()
-    setTimeout(() => {
-      paths[index].style.strokeDashoffset = '0'
-      animatePaths(paths, index + 1)
-    }, 50)
-  }
-}
+pathObserver.observe(document.getElementById('progress-exp-parent'))

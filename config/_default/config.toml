@@ -1,12 +1,24 @@
 title = "Nicolas Crausaz"
 baseURL = "https://crausaz.click/"
 theme = "ncrausaz"
-sitemap = "sitemap.xml"
 defaultContentLanguage = "fr"
 hasCJKLanguage = false 
 defaultContentLanguageInSubdir = false
+
+[params]
+  description = "Nicolas Crausaz, ingénieur en informatique logicielle"
+  author = "Nicolas Crausaz"
+
+[fr]
+  languageCode = "fr"
+
 [taxonomies]
 
 [services]
   [services.googleAnalytics]
     ID = 'G-7GV42PYC7G'
+
+[sitemap]
+  changeFreq = 'monthly'
+  filename = 'sitemap.xml'
+  priority = -1
