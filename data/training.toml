@@ -1,7 +1,7 @@
-Title = "Expérience"
+Title = "Formation"
 Subtitle = "During this time, I also worked part-time on many more projects, check them out below !"
 
-# [[experience]]
+# [[training]]
 # id = 1
 # btn_label = "Actuellement"
 # job_employer = "Armée suisse"
@@ -13,7 +13,7 @@ Subtitle = "During this time, I also worked part-time on many more projects, che
 # Dès le mois de janvier 2024, j'effectuerai mon école de recrue à l'armée suisse en tant que canonnier mortiers.
 # '''
 
-[[experience]]
+[[training]]
 id = 1
 btn_label = "2019 - 2023"
 job_employer = "HEIG-VD"
@@ -28,8 +28,8 @@ J'ai également pu développer mes compétences en gestion de projet, en travail
 Mon travail de Bachelor est présenté dans la section "Projets".
 '''
 
-[[experience]]
-id = 3
+[[training]]
+id = 2
 btn_label = "2015 - 2019"
 job_employer = "EPFL ENAC-IT"
 job_description = "CFC Informaticien d'entreprise et maturité pro. technique"

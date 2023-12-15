@@ -1,14 +1,14 @@
 <section
   class="w-screen h-screen portfolio-blue flex flex-col items-center lg:justify-center section opacity-0"
-  id="experience"
+  id="training"
 >
   <div class="w-2/3 lg:w-1/2 relative">
     <div class="drop-shadow-[0_0_30px_#10b981] mt-6 lg:mt-0">
-      <h1 class="section-title uppercase">{{ .Site.Data.experience.Title }}</h1>
+      <h1 class="section-title uppercase">{{ .Site.Data.training.Title }}</h1>
     </div>
     <div class="flex w-full flex-col sm:flex-row mt-10 z-10">
       <div class="mb-4 overflow-x-auto sm:w-max sm:flex-col flex-none">
-        {{ range .Site.Data.experience.experience }}
+        {{ range .Site.Data.training.training }}
         <button
           class="text-white mb-2 flex h-12 items-center whitespace-nowrap px-4 rounded-xl rounded-l-none exp-button  {{ if eq .id 1 }} bg-emerald-500 {{ end }}"
           data-id="{{ .id }}"
@@ -20,7 +20,7 @@
         {{ end }}
       </div>
       <div class="ml-5">
-        {{ range .Site.Data.experience.experience }}
+        {{ range .Site.Data.training.training }}
         <div class="flex flex-col gap-2 exp-section {{ if ne .id 1 }} hidden {{ end }}" id="sect{{ .id }}">
           <div class="flex gap-2">
             <img src="/img/experiences/{{ .image }}" class="p-2" style="max-height: 80px" />
