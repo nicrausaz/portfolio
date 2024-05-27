@@ -19,7 +19,7 @@ jobs:
     - name: 🔨 Build Project
       run: |
         npm install
-        npm run build
+        npm ci
       
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v3
