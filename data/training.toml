@@ -1,20 +1,20 @@
 Title = "Formation"
 Subtitle = "During this time, I also worked part-time on many more projects, check them out below !"
 
-# [[training]]
-# id = 1
-# btn_label = "Actuellement"
-# job_employer = "Armée suisse"
-# job_description = "Ecole de recrue"
-# job_location = ""
-# job_timerange = "01.2024 - 05.2024"
-# image = "army.png"
-# description = '''
-# Dès le mois de janvier 2024, j'effectuerai mon école de recrue à l'armée suisse en tant que canonnier mortiers.
-# '''
-
 [[training]]
 id = 1
+btn_label = "Janvier - Mai 2024"
+job_employer = "Armée suisse"
+job_description = "Ecole de recrue"
+job_location = ""
+job_timerange = "01.2024 - 05.2024"
+image = "army.png"
+description = '''
+J'ai effectué mon école de recrue dans l'armée suisse en tant que canonnier mortier.
+'''
+
+[[training]]
+id = 2
 btn_label = "2019 - 2023"
 job_employer = "HEIG-VD"
 job_description = "BSc in Software Engineering"
@@ -29,7 +29,7 @@ Mon travail de Bachelor est présenté dans la section "Projets".
 '''
 
 [[training]]
-id = 2
+id = 3
 btn_label = "2015 - 2019"
 job_employer = "EPFL ENAC-IT"
 job_description = "CFC Informaticien d'entreprise et maturité pro. technique"
