@@ -10,6 +10,16 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
+
+    - name: Use Node.js 20
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+      
+    - name: 🔨 Build Project
+      run: |
+        npm install
+        npm run build
       
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v3
