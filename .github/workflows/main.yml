@@ -12,27 +12,19 @@ jobs:
       uses: actions/checkout@v4
       
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v3
+      uses: peaceiris/actions-hugo@v4
       with:
-        hugo-version: '0.119.0'
+        hugo-version: '0.101.0'
         extended: true
-
-    - name: Use Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20.x'
-
-    - name: node dependencies
-      run: npm ci
       
     - name: build Hugo
       run: hugo --minify
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/
-        server-dir: /
+        server-dir: www/
