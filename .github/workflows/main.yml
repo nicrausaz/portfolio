@@ -16,6 +16,14 @@ jobs:
       with:
         hugo-version: '0.119.0'
         extended: true
+
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+
+    - name: node dependencies
+      run: npm ci
       
     - name: build Hugo
       run: hugo --minify
