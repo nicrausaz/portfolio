@@ -6,8 +6,8 @@
   weight = 10
 
 [[main]]
-  name = "Formation"
-  url = "#training"
+  name = "Expérience"
+  url = "#experience"
   weight = 20
 
 [[main]]

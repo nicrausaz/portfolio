@@ -13,7 +13,7 @@ image = "gallimea.png"
 featured_image = "gallimea.png"
 website = "https://gallimea.ch/"
 project_start = "Août"
-project_end = "Décembre 2023"
+project_end = "Septembre 2024"
 +++
 
 Gallimea est une application de comptabilité destinées aux petites entreprises, indépendants, clubs et associations.
