@@ -1,0 +1,31 @@
+{{- /* Custom emerald cursor: dot + trailing ring (fine-pointer devices only) */ -}}
+<div id="cursor-ring" aria-hidden="true"></div>
+<div id="cursor-dot" aria-hidden="true"></div>
+<script>
+  (function () {
+    if (!window.matchMedia || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    var dot = document.getElementById('cursor-dot');
+    var ring = document.getElementById('cursor-ring');
+    if (!dot || !ring) return;
+
+    window.addEventListener('mousemove', function (e) {
+      var t = 'translate(' + e.clientX + 'px,' + e.clientY + 'px)';
+      dot.style.transform = t;
+      ring.style.transform = t;
+    });
+
+    document.addEventListener('mouseleave', function () {
+      dot.style.opacity = '0'; ring.style.opacity = '0';
+    });
+    document.addEventListener('mouseenter', function () {
+      dot.style.opacity = '1'; ring.style.opacity = '1';
+    });
+
+    var interactive = 'a, button, .hoverable, .exp-button, .tab-btn, input, textarea, [data-section]';
+    function bind(el) {
+      el.addEventListener('mouseenter', function () { ring.classList.add('is-hover'); });
+      el.addEventListener('mouseleave', function () { ring.classList.remove('is-hover'); });
+    }
+    document.querySelectorAll(interactive).forEach(bind);
+  })();
+</script>

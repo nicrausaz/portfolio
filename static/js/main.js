@@ -41,16 +41,16 @@ sections.forEach((section) => {
 anime({
   targets: '#main-title',
   opacity: 1,
-  duration: 2000,
-  delay: 1000,
+  duration: 1600,
+  delay: 200,
   easing: 'easeOutExpo',
 })
 
 anime({
   targets: '#social-block',
   opacity: 1,
-  duration: 2000,
-  delay: 2000,
+  duration: 1600,
+  delay: 1100,
   easing: 'easeOutExpo',
 })
 
@@ -58,7 +58,7 @@ anime({
   targets: '#call-to-scroll',
   opacity: 1,
   duration: 1000,
-  delay: 3000,
+  delay: 1800,
   easing: 'easeOutExpo',
 })
 
@@ -69,28 +69,33 @@ anime({
   easing: 'easeInExpo',
 })
 
-// Menu mobile
-document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
-  const menu = document.getElementById('mobile-menu')
+// Menu mobile : overlay plein écran
+const mobileMenu = document.getElementById('mobile-menu')
+const mobileToggle = document.getElementById('mobile-menu-toggle')
+const mobileClose = document.getElementById('mobile-menu-close')
+const mobileLinks = document.querySelectorAll('.mobile-link')
 
-  // TODO: better animation
-  if (menu.classList.contains('hidden')) {
-    anime({
-      targets: '#mobile-menu',
-      duration: 1000,
-      begin: () => {
-        menu.classList.remove('hidden')
-      },
-    })
-  } else {
-    anime({
-      targets: '#mobile-menu',
-      duration: 1000,
-      begin: () => {
-        menu.classList.add('hidden')
-      },
-    })
-  }
+const openMobileMenu = () => {
+  mobileMenu.classList.remove('hidden')
+  document.body.style.overflow = 'hidden'
+  // double rAF pour laisser le display s'appliquer avant la transition d'opacité
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => mobileMenu.classList.remove('opacity-0'))
+  })
+}
+
+const closeMobileMenu = () => {
+  mobileMenu.classList.add('opacity-0')
+  document.body.style.overflow = ''
+  setTimeout(() => mobileMenu.classList.add('hidden'), 300)
+}
+
+mobileToggle.addEventListener('click', openMobileMenu)
+mobileClose.addEventListener('click', closeMobileMenu)
+mobileLinks.forEach((link) => link.addEventListener('click', closeMobileMenu))
+// Fermer en cliquant sur le fond de l'overlay
+mobileMenu.addEventListener('click', (e) => {
+  if (e.target === mobileMenu) closeMobileMenu()
 })
 
 // Bouton expériences

@@ -1,22 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ .Site.LanguageCode }}" class="scroll-smooth">
   {{ partial "head.html" . }}
 
-  <body class="overflow-x-hidden overflow-y-scroll bg-gradient-to-b from-deepblue to-deepbluegrad from-75%">
-
-  <!-- <div class="cursor">
-    <div class="cursor__ball cursor__ball--small">
-      <svg height="10" width="10">
-        <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
-      </svg>
-    </div>
-  </div> -->
-    {{- partial "components/langSwitcher.html" . -}}
-    {{ if not hugo.IsProduction }}
-      {{- partial "dev/dev-tools.html" . -}}
-    {{ end }}
-    <main>
-      {{- block "main" . }}{{- end }}
-    </main>
+  <body
+    class="overflow-x-hidden overflow-y-scroll bg-gradient-to-b from-deepblue to-deepbluegrad from-75%"
+  >
+    {{- partial "components/codeBackground.html" . -}} {{- partial
+    "components/langSwitcher.html" . -}} {{- partial
+    "components/customCursor.html" . -}} {{ if not hugo.IsProduction }} {{-
+    partial "dev/dev-tools.html" . -}} {{ end }}
+    <main class="relative z-10">{{- block "main" . }}{{- end }}</main>
   </body>
 </html>
