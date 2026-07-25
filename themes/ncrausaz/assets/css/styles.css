@@ -12,13 +12,54 @@
   src: url('/fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 700;
+  font-display: swap;
+}
+
 body {
   /* cursor: none; */
+  font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.01em;
 }
 
 h1,
 h2 {
   font-family: 'Roboto Slab', serif;
+}
+
+/* Animated glow behind titles */
+.text-glow {
+  filter: drop-shadow(0 0 30px rgba(16, 185, 129, 0.75));
+  animation: glow-drift 6s ease-in-out infinite;
+  will-change: filter;
+}
+
+@keyframes glow-drift {
+  0% {
+    filter: drop-shadow(-6px -3px 26px rgba(16, 185, 129, 0.55));
+  }
+  25% {
+    filter: drop-shadow(6px -4px 34px rgba(16, 185, 129, 0.8));
+  }
+  50% {
+    filter: drop-shadow(4px 5px 40px rgba(16, 185, 129, 0.65));
+  }
+  75% {
+    filter: drop-shadow(-5px 4px 32px rgba(16, 185, 129, 0.8));
+  }
+  100% {
+    filter: drop-shadow(-6px -3px 26px rgba(16, 185, 129, 0.55));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-glow {
+    animation: none;
+    filter: drop-shadow(0 0 30px rgba(16, 185, 129, 0.75));
+  }
 }
 
 .project-content li {

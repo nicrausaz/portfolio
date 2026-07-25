@@ -11,7 +11,7 @@ Redécouvrez le Chasselas à travers une carafe artisanale pensée pour révéle
 techs = ["Hugo"]
 image = "carafechasselas.svg"
 featured_image = "carafechasselas.svg"
-website = "https://artelys.ch/"
+website = "https://www.carafe-chasselas.ch/"
 project_start = "Septembre"
 project_end = "Septembre 2024"
 +++
