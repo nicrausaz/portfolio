@@ -1,0 +1,112 @@
+{{- /* Floating code tokens background, injected client-side */ -}}
+<div id="code-bg" aria-hidden="true"></div>
+<script>
+  (function () {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    )
+      return;
+    var host = document.getElementById("code-bg");
+    if (!host) return;
+    var tokens = [
+      "const",
+      "let",
+      "=>",
+      "</>",
+      "{ }",
+      "()",
+      "[]",
+      "async",
+      "await",
+      "return",
+      "import",
+      "export",
+      "function",
+      "npm",
+      "git push",
+      "commit",
+      "&&",
+      "||",
+      "!==",
+      "===",
+      "::",
+      "#!/bin",
+      "<div>",
+      "useState",
+      "fetch()",
+      "0x1F",
+      "try",
+      "catch",
+      "yield",
+      "props",
+      "null",
+      "void",
+      "class",
+      "extends",
+      "new",
+      "this",
+      "typeof",
+      "interface",
+      "type",
+      "enum",
+      "Promise",
+      ".map()",
+      ".filter()",
+      ".reduce()",
+      "?.",
+      "??",
+      "for()",
+      "while",
+      "switch",
+      "case",
+      "break",
+      "def",
+      "lambda",
+      "struct",
+      "func",
+      "i++",
+      "console.log",
+      "print()",
+      "SELECT *",
+      "WHERE",
+      "JOIN",
+      "HTTP 200",
+      "404",
+      "sudo",
+      "cd ~/",
+      "ls -la",
+      "docker",
+      "k8s",
+      "vite",
+      "yarn",
+      "CI/CD",
+      "<T>",
+      "#include",
+      "git merge",
+      "rebase",
+      "push()",
+      "assert",
+      "throw",
+    ];
+    var COUNT = 26;
+    for (var i = 0; i < COUNT; i++) {
+      var el = document.createElement("span");
+      el.className = "code-token";
+      el.textContent = tokens[Math.floor(Math.random() * tokens.length)];
+      var dur = 14 + Math.random() * 12;
+      el.style.left = Math.random() * 96 + "%";
+      el.style.fontSize = 11 + Math.random() * 9 + "px";
+      el.style.setProperty("--tok-duration", dur.toFixed(2) + "s");
+      el.style.setProperty(
+        "--tok-delay",
+        (-Math.random() * dur).toFixed(2) + "s",
+      );
+      el.style.setProperty(
+        "--tok-opacity",
+        (0.1 + Math.random() * 0.35).toFixed(2),
+      );
+      host.appendChild(el);
+    }
+  })();
+</script>
