@@ -1,0 +1,14 @@
+{{- /* Fixed top-right FR/EN language switcher */ -}}
+<div class="fixed top-4 right-4 z-50 flex items-center gap-1 rounded-full bg-white/10 backdrop-blur-lg p-1 text-xs font-bold uppercase tracking-widest">
+  {{- range .AllTranslations }}
+  {{- $active := eq .Language.Lang $.Site.Language.Lang }}
+  <a
+    href="{{ .RelPermalink }}"
+    hreflang="{{ .Language.Lang }}"
+    title="{{ .Language.LanguageName }}"
+    class="px-3 py-1 rounded-full transition {{ if $active }}bg-emerald-500 text-white{{ else }}text-slate-300 hover:text-white{{ end }}"
+  >
+    {{ .Language.Lang | upper }}
+  </a>
+  {{- end }}
+</div>

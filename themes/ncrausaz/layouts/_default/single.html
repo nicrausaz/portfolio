@@ -8,12 +8,12 @@
       <div class="flex items-center justify-between w-full">
         <div>
           <h1>
-            {{ if .Params.mandator }} Mandaté par
+            {{ if .Params.mandator }} {{ i18n "project_mandated_by" }}
             <a
               href="{{ .Params.mandator_url }}"
               target="_blank"
               class="underline decoration-emerald-500 hover:text-emerald-500"
-              title="Voir le site de l'entreprise"
+              title="{{ i18n "project_view_company" }}"
               >{{ .Params.mandator }}
             </a>
           </h1>
@@ -39,7 +39,7 @@
             class="outline outline-2 outline-offset-2 outline-slate-500 text-slate-500 hover:outline-white hover:text-white transition inline-block relative p-2 rounded-md"
             target="_blank"
             href="{{ .Params.website }}"
-            title="Voir le projet"
+            title="{{ i18n "project_view_project" }}"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6">
               <path
@@ -101,7 +101,7 @@
           clip-rule="evenodd"
         />
       </svg>
-      <span class="relative ml-6">Retour</span>
+      <span class="relative ml-6">{{ i18n "project_back" }}</span>
     </a>
   </div>
 </article>

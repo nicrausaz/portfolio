@@ -1,0 +1,6 @@
+Title = "About me"
+Bio = '''
+My name is <b>Nicolas Crausaz</b>, <span id="age"></span> years old. I'm a software engineer, graduate of HEIG-VD.
+<br />
+Passionate about software development, especially Web technologies, I had the opportunity during my studies — and independently — to build many real-world projects of medium to large scale.
+'''

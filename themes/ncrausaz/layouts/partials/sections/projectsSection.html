@@ -1,7 +1,7 @@
 <section class="w-screen h-screen flex flex-col items-center lg:justify-center section opacity-0 mb-20" id="projects">
   <div class="w-2/3 lg:w-1/2">
     <div class="text-glow mt-6 lg:mt-0">
-      <h1 class="section-title uppercase">Projets</h1>
+      <h1 class="section-title uppercase">{{ i18n "projects_title" }}</h1>
     </div>
 
     <div class="w-full grid grid-cols-2 cursor-pointer my-6">
@@ -9,20 +9,19 @@
         class="rounded-xl rounded-r-none border border-emerald-500 p-2 tab-btn project-active"
         data-target="freelanceSection"
       >
-        <h2 class="text-xl text-center text-white">Freelance</h2>
+        <h2 class="text-xl text-center text-white">{{ i18n "projects_tab_freelance" }}</h2>
       </div>
       <div class="rounded-xl rounded-l-none border border-emerald-500 p-2 tab-btn" data-target="othersSection">
-        <h2 class="text-xl text-center text-white">Autres</h2>
+        <h2 class="text-xl text-center text-white">{{ i18n "projects_tab_others" }}</h2>
       </div>
     </div>
 
     <div class="tab-content mt-4" id="freelanceSection">
       <p class="text-white mb-2">
-        J'ai réalisé les projets suivant de manière professionelle, la plupart à temps partiel à côté de mes études. Il
-        m'ont permi de mettre en application mes compétences techniques
+        {{ i18n "projects_freelance_intro" }}
       </p>
       {{ $projects := where .Site.RegularPages ".Params.projectType" "Freelance" }}
-      <p class="text-emerald-500 underline italic">{{ $projects | len }} projets</p>
+      <p class="text-emerald-500 underline italic">{{ $projects | len }} {{ i18n "projects_word" }}</p>
       <div
         class="mt-2 overflow-y-scroll overflow-x-hidden grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-2 projects-section"
         style="max-height: 400px"
@@ -33,10 +32,10 @@
 
     <div class="tab-content hidden mt-4" id="othersSection">
       <p class="text-white mb-2">
-        Les projets suivants ont pour la plupars été réalisés en groupe durant ma formation à la HEIG-VD.
+        {{ i18n "projects_school_intro" }}
       </p>
       {{ $projects := where .Site.RegularPages ".Params.projectType" "School" }}
-      <p class="text-emerald-500 underline italic">{{ $projects | len }} projets</p>
+      <p class="text-emerald-500 underline italic">{{ $projects | len }} {{ i18n "projects_word" }}</p>
       <div
         class="mt-2 overflow-y-scroll overflow-x-hidden grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-2 projects-section"
         style="max-height: 400px"

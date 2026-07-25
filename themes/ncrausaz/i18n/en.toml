@@ -1,0 +1,26 @@
+# About
+about_hobby_basketball = "Basketball"
+about_hobby_coding = "Coding"
+about_hobby_gaming = "Gaming"
+
+# Projects
+projects_title = "Projects"
+projects_tab_freelance = "Freelance"
+projects_tab_others = "Others"
+projects_freelance_intro = "I carried out the following projects professionally, most of them part-time alongside my studies. They allowed me to put my technical skills into practice."
+projects_school_intro = "The following projects were mostly built as a team during my studies at HEIG-VD."
+projects_word = "projects"
+projectcard_more = "More about the project"
+
+# Contact
+contact_form_title = "Your message"
+contact_ph_name = "Your name"
+contact_ph_email = "Your email"
+contact_ph_message = "Your message ..."
+contact_send = "Send"
+
+# Project page
+project_mandated_by = "Commissioned by"
+project_view_company = "Visit the company website"
+project_view_project = "View the project"
+project_back = "Back"
