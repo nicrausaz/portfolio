@@ -4,7 +4,7 @@
       <h1 class="section-title uppercase">Contact</h1>
     </div>
     <p class="text-white mb-10">
-      {{ .Site.Data.contact.Subtitle }}
+      {{ (index site.Data site.Language.Lang).contact.Subtitle }}
     </p>
     <div class="w-full rounded-2xl shadow-2xl backdrop-blur-sm bg-white/10">
       <form
@@ -14,7 +14,7 @@
         class="w-full p-8 my-4 mr-auto rounded-2xl shadow-2xl bg-emerald-500 transform translate-x-4 translate-y-4"
       >
         <div class="flex">
-          <h1 class="font-bold uppercase text-3xl text-white">Votre message</h1>
+          <h1 class="font-bold uppercase text-3xl text-white">{{ i18n "contact_form_title" }}</h1>
         </div>
 
         <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
@@ -22,20 +22,20 @@
             class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-[#001825]"
             name="name"
             type="text"
-            placeholder="Votre nom"
+            placeholder="{{ i18n "contact_ph_name" }}"
             required
           />
           <input
             class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
             name="email"
             type="email"
-            placeholder="Votre email"
+            placeholder="{{ i18n "contact_ph_email" }}"
             required
           />
         </div>
         <div class="my-4">
           <textarea
-            placeholder="Votre message ..."
+            placeholder="{{ i18n "contact_ph_message" }}"
             name="message"
             class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
             required
@@ -46,7 +46,7 @@
             type="submit"
             class="uppercase text-sm font-bold tracking-wide bg-[#001825] text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
           >
-            Envoyer
+            {{ i18n "contact_send" }}
           </button>
         </div>
       </form>

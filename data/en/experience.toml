@@ -1,0 +1,56 @@
+Title = "Experience"
+Subtitle = "During this time, I also worked part-time on many more projects, check them out below !"
+
+[[experience]]
+id = 1
+btn_label = "September 2024 - Present"
+job_employer = "Quadrum"
+job_description = "Software Engineer"
+job_location = "Prilly"
+job_timerange = ""
+image = "quadrum.jpeg"
+description = '''
+Fullstack Software Engineer.
+Regulatory and financial assessment.
+'''
+
+[[experience]]
+id = 2
+btn_label = "January - May 2024"
+job_employer = "Swiss Army"
+job_description = "Basic military training"
+job_location = ""
+job_timerange = "01.2024 - 05.2024"
+image = "army.png"
+description = '''
+I completed my basic military training in the Swiss Army as a mortar gunner.
+'''
+
+[[experience]]
+id = 3
+btn_label = "2019 - 2023"
+job_employer = "HEIG-VD"
+job_description = "BSc in Software Engineering"
+job_location = "Yverdon-les-Bains, Switzerland"
+job_timerange = "09.2019 - 08.2023"
+image = "heigvd.png"
+description = '''
+This degree gave me extensive knowledge in software development, including object-oriented design and programming,
+web development, databases and mobile development.
+I was also able to develop my project management, teamwork and communication skills through the many group projects and labs.
+My Bachelor's thesis is presented in the "Projects" section.
+'''
+
+[[experience]]
+id = 4
+btn_label = "2015 - 2019"
+job_employer = "EPFL ENAC-IT"
+job_description = "Federal VET Diploma in IT & technical vocational baccalaureate"
+job_location = "Lausanne, Switzerland"
+job_timerange = "08.2015 - 08.2019"
+image = "epfl.png"
+description = '''
+Through a dual-track apprenticeship with an integrated vocational baccalaureate, I discovered the job of a corporate IT specialist and developed my skills.
+I worked on various projects, mainly in web development.
+I also handled 1st and 2nd level support as well as system and network administration.
+'''

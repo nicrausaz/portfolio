@@ -2,9 +2,10 @@
   class="w-screen h-screen flex flex-col items-center lg:justify-center section opacity-0"
   id="about"
 >
+  {{ $data := index site.Data site.Language.Lang }}
   <div class="w-2/3 lg:w-1/2">
     <div class="text-glow mt-6 lg:mt-0">
-      <h1 class="section-title uppercase">{{ .Site.Data.about.Title }}</h1>
+      <h1 class="section-title uppercase">{{ $data.about.Title }}</h1>
     </div>
     <div class="flex flex-col lg:flex-row items-center justify-between gap-4">
       <img src="/img/NicolasCrausaz.png" draggable="false" class="h-64" />
@@ -12,15 +13,7 @@
       <div
         class="backdrop-blur-xl bg-white/10 text-white p-4 rounded-xl hover:shadow-xl hover:shadow-[#001521] -translate-y-10 lg:-translate-y-0"
       >
-        <p>
-          Je m'appelle <b>Nicolas Crausaz</b>, <span id="age"></span> ans. Je
-          suis ingénieur logiciel diplômé de l’HEIG-VD.
-          <br />
-          Passionné par le développement, en particulier par les technologies
-          Web, j’ai eu l’occasion durant mes études, ainsi que de manière
-          indépendante, de réaliser de multiples projets réels de moyenne à
-          grande envergure.
-        </p>
+        <p>{{ $data.about.Bio | safeHTML }}</p>
 
         <div class="flex justify-around items-center w-full mt-4">
           <div class="flex flex-col items-center">
@@ -39,7 +32,7 @@
               </svg>
             </div>
             <h2 class="text-emerald-500 -translate-y-4 hidden lg:block">
-              Basketball
+              {{ i18n "about_hobby_basketball" }}
             </h2>
           </div>
           <div class="flex flex-col items-center">
@@ -57,7 +50,7 @@
               </svg>
             </div>
             <h2 class="text-emerald-500 -translate-y-4 hidden lg:block">
-              Développer
+              {{ i18n "about_hobby_coding" }}
             </h2>
           </div>
           <div class="flex flex-col items-center">
@@ -77,7 +70,7 @@
               </svg>
             </div>
             <h2 class="text-emerald-500 -translate-y-4 hidden lg:block">
-              Jeux vidéos
+              {{ i18n "about_hobby_gaming" }}
             </h2>
           </div>
         </div>

@@ -1,0 +1,26 @@
+# About
+about_hobby_basketball = "Basketball"
+about_hobby_coding = "Développer"
+about_hobby_gaming = "Jeux vidéos"
+
+# Projects
+projects_title = "Projets"
+projects_tab_freelance = "Freelance"
+projects_tab_others = "Autres"
+projects_freelance_intro = "J'ai réalisé les projets suivant de manière professionelle, la plupart à temps partiel à côté de mes études. Il m'ont permi de mettre en application mes compétences techniques"
+projects_school_intro = "Les projets suivants ont pour la plupars été réalisés en groupe durant ma formation à la HEIG-VD."
+projects_word = "projets"
+projectcard_more = "Plus d'informations sur le projet"
+
+# Contact
+contact_form_title = "Votre message"
+contact_ph_name = "Votre nom"
+contact_ph_email = "Votre email"
+contact_ph_message = "Votre message ..."
+contact_send = "Envoyer"
+
+# Project page
+project_mandated_by = "Mandaté par"
+project_view_company = "Voir le site de l'entreprise"
+project_view_project = "Voir le projet"
+project_back = "Retour"

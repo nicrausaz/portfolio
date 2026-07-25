@@ -1,0 +1,6 @@
+Title = "À propos"
+Bio = '''
+Je m'appelle <b>Nicolas Crausaz</b>, <span id="age"></span> ans. Je suis ingénieur logiciel diplômé de l’HEIG-VD.
+<br />
+Passionné par le développement, en particulier par les technologies Web, j’ai eu l’occasion durant mes études, ainsi que de manière indépendante, de réaliser de multiples projets réels de moyenne à grande envergure.
+'''

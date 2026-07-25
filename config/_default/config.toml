@@ -2,15 +2,25 @@ title = "Nicolas Crausaz"
 baseURL = "https://crausaz.click/"
 theme = "ncrausaz"
 defaultContentLanguage = "fr"
-hasCJKLanguage = false 
+hasCJKLanguage = false
 defaultContentLanguageInSubdir = false
 
 [params]
-  description = "Nicolas Crausaz, ingénieur en informatique logicielle"
   author = "Nicolas Crausaz"
 
-[fr]
-  languageCode = "fr"
+[languages]
+  [languages.fr]
+    languageCode = "fr"
+    languageName = "Français"
+    weight = 1
+    [languages.fr.params]
+      description = "Nicolas Crausaz, ingénieur en informatique logicielle"
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    weight = 2
+    [languages.en.params]
+      description = "Nicolas Crausaz, Software Engineer"
 
 [taxonomies]
 
